@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PocketComputerTutorial.Forms
 {
     static class Program
     {
+        const string appUrl = "http://computerguide.somee.com/";
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +14,8 @@ namespace PocketComputerTutorial.Forms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            ComputerHardwareGuide.API.APIContext.SetApiUrl(appUrl);
+            Application.Run(new MainForm());
         }
     }
 }
