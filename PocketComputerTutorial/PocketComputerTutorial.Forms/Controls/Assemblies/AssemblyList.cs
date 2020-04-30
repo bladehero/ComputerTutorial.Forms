@@ -15,7 +15,18 @@ namespace PocketComputerTutorial.Forms.Controls.Assemblies
             InitializeComponent();
 
             AddButton.Click += AddButton_Click;
+            RefreshButton.Click += RefreshButton_Click;
+            RefreshData();
+        }
 
+        private void RefreshButton_Click(object sender, EventArgs e)
+        {
+            RefreshData();
+        }
+
+        private void RefreshData()
+        {
+            AssemblyPanel.Controls.Clear();
             BaseApiResponse<IEnumerable<Assembly>> assemblies = null;
             Task.Run(async () =>
             {
@@ -25,8 +36,14 @@ namespace PocketComputerTutorial.Forms.Controls.Assemblies
             {
                 var assemblyView = new AssemblyView(assembly);
                 assemblyView.Deleted += AssemblyView_Deleted;
+                assemblyView.Updated += AssemblyView_Updated;
                 AssemblyPanel.Controls.Add(assemblyView);
             }
+        }
+
+        private void AssemblyView_Updated(object sender, EventArgs e)
+        {
+            RefreshData();
         }
 
         private async void AssemblyView_Deleted(object sender, EventArgs e)
@@ -42,8 +59,15 @@ namespace PocketComputerTutorial.Forms.Controls.Assemblies
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            var modal = new UpdateAssemblyModal();
-            modal.ShowDialog(this);
+            var modal = new UpdateAssemblyModal()
+            {
+                StartPosition = FormStartPosition.CenterScreen
+            };
+            var result = modal.ShowDialog(this);
+            if (result == DialogResult.OK)
+            {
+                RefreshData();
+            }
         }
     }
 }

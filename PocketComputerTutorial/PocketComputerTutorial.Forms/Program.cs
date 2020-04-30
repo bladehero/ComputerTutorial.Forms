@@ -15,7 +15,7 @@ namespace PocketComputerTutorial.Forms
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             ComputerHardwareGuide.API.APIContext.SetApiUrl(appUrl);
-            Application.Run(new MainForm());
+            Application.Run(new MainForm() { StartPosition = FormStartPosition.CenterScreen });
         }
     }
 }

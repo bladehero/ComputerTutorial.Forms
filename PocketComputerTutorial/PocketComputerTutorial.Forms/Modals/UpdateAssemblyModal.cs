@@ -15,6 +15,7 @@ namespace PocketComputerTutorial.Forms.Modals
             Assembly = new Assembly();
             SaveButton.Click += SaveButton_Click;
             CancelButton.Click += CancelButton_Click;
+            DialogResult = DialogResult.None;
         }
         public UpdateAssemblyModal(Assembly assembly) : this()
         {
@@ -61,6 +62,7 @@ namespace PocketComputerTutorial.Forms.Modals
             {
                 if (success)
                 {
+                    DialogResult = DialogResult.OK;
                     this.Close();
                 }
                 else

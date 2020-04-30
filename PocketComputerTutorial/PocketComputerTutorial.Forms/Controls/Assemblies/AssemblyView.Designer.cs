@@ -72,7 +72,7 @@
             this.DeleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DeleteButton.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DeleteButton.ForeColor = System.Drawing.Color.Firebrick;
-            this.DeleteButton.Location = new System.Drawing.Point(707, 8);
+            this.DeleteButton.Location = new System.Drawing.Point(655, 8);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(64, 64);
             this.DeleteButton.TabIndex = 3;
@@ -85,17 +85,19 @@
             this.ChangeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ChangeButton.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ChangeButton.ForeColor = System.Drawing.Color.DarkSeaGreen;
-            this.ChangeButton.Location = new System.Drawing.Point(637, 8);
+            this.ChangeButton.Location = new System.Drawing.Point(585, 8);
             this.ChangeButton.Name = "ChangeButton";
             this.ChangeButton.Size = new System.Drawing.Size(64, 64);
             this.ChangeButton.TabIndex = 4;
-            this.ChangeButton.Text = "✎";
+            this.ChangeButton.Text = "⚙";
             this.ChangeButton.UseVisualStyleBackColor = false;
             // 
             // AssemblyView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Transparent;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.ChangeButton);
@@ -106,7 +108,7 @@
             this.Margin = new System.Windows.Forms.Padding(10);
             this.Name = "AssemblyView";
             this.Padding = new System.Windows.Forms.Padding(5);
-            this.Size = new System.Drawing.Size(778, 78);
+            this.Size = new System.Drawing.Size(727, 80);
             this.ResumeLayout(false);
             this.PerformLayout();
 

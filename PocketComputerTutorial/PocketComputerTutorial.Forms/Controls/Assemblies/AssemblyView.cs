@@ -18,6 +18,7 @@ namespace PocketComputerTutorial.Forms.Controls.Assemblies
         public Assembly Assembly { get; set; }
 
         public event EventHandler Deleted;
+        public event EventHandler Updated;
 
         public AssemblyView(Assembly assembly)
         {
@@ -36,8 +37,15 @@ namespace PocketComputerTutorial.Forms.Controls.Assemblies
 
         private void Label_Click(object sender, EventArgs e)
         {
-            var modal = new UpdateAssemblyModal(Assembly);
-            modal.ShowDialog(this);
+            var modal = new UpdateAssemblyModal(Assembly)
+            {
+                StartPosition = FormStartPosition.CenterScreen
+            };
+            var result = modal.ShowDialog(this);
+            if (result == DialogResult.OK)
+            {
+                Updated?.Invoke(this, e);
+            }
         }
 
         private async void ChangeButton_Click(object sender, EventArgs e)
