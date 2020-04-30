@@ -10,6 +10,8 @@ namespace PocketComputerTutorial.Forms.Controls.Assemblies
 {
     public partial class AssemblyList : UserControl
     {
+        public event EventHandler Opened;
+
         public AssemblyList()
         {
             InitializeComponent();
@@ -37,8 +39,14 @@ namespace PocketComputerTutorial.Forms.Controls.Assemblies
                 var assemblyView = new AssemblyView(assembly);
                 assemblyView.Deleted += AssemblyView_Deleted;
                 assemblyView.Updated += AssemblyView_Updated;
+                assemblyView.Opened += AssemblyView_Opened; ;
                 AssemblyPanel.Controls.Add(assemblyView);
             }
+        }
+
+        private void AssemblyView_Opened(object sender, EventArgs e)
+        {
+            Opened(sender, e);
         }
 
         private void AssemblyView_Updated(object sender, EventArgs e)

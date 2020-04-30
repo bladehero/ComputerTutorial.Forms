@@ -80,7 +80,7 @@
             this.RefreshButton.Name = "RefreshButton";
             this.RefreshButton.Size = new System.Drawing.Size(70, 64);
             this.RefreshButton.TabIndex = 4;
-            this.RefreshButton.Text = "↺\t";
+            this.RefreshButton.Text = "↺";
             this.RefreshButton.UseVisualStyleBackColor = false;
             // 
             // AssemblyList

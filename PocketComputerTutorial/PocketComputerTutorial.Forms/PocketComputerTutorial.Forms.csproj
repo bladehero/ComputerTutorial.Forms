@@ -66,17 +66,72 @@
     <Compile Include="Controls\Assemblies\AssemblyView.Designer.cs">
       <DependentUpon>AssemblyView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\AssemblyComponents\AssemblyComponentList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AssemblyComponents\AssemblyComponentList.Designer.cs">
+      <DependentUpon>AssemblyComponentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Components\ComponentList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Components\ComponentList.Designer.cs">
+      <DependentUpon>ComponentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Components\ComponentView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Components\ComponentView.Designer.cs">
+      <DependentUpon>ComponentView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SearchComponents\SearchComponentList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SearchComponents\SearchComponentList.Designer.cs">
+      <DependentUpon>SearchComponentList.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modals\SearchComponentModal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modals\SearchComponentModal.Designer.cs">
+      <DependentUpon>SearchComponentModal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modals\UpdateAssemblyModal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Modals\UpdateAssemblyModal.Designer.cs">
       <DependentUpon>UpdateAssemblyModal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\BaseOption.cs" />
+    <Compile Include="Options\CheckboxOption.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\CheckboxOption.Designer.cs">
+      <DependentUpon>CheckboxOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\RadiobuttonOption.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\RadiobuttonOption.Designer.cs">
+      <DependentUpon>RadiobuttonOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\RangeOption.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\RangeOption.Designer.cs">
+      <DependentUpon>RangeOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\TextOption.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\TextOption.Designer.cs">
+      <DependentUpon>TextOption.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -86,11 +141,38 @@
     <EmbeddedResource Include="Controls\Assemblies\AssemblyView.resx">
       <DependentUpon>AssemblyView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AssemblyComponents\AssemblyComponentList.resx">
+      <DependentUpon>AssemblyComponentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Components\ComponentList.resx">
+      <DependentUpon>ComponentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Components\ComponentView.resx">
+      <DependentUpon>ComponentView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SearchComponents\SearchComponentList.resx">
+      <DependentUpon>SearchComponentList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modals\SearchComponentModal.resx">
+      <DependentUpon>SearchComponentModal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modals\UpdateAssemblyModal.resx">
       <DependentUpon>UpdateAssemblyModal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\CheckboxOption.resx">
+      <DependentUpon>CheckboxOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\RadiobuttonOption.resx">
+      <DependentUpon>RadiobuttonOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\RangeOption.resx">
+      <DependentUpon>RangeOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\TextOption.resx">
+      <DependentUpon>TextOption.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

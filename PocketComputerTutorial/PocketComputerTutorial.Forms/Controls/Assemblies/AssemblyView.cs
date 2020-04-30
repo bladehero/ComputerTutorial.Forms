@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComputerHardwareGuide.Models;
 using ComputerHardwareGuide.API;
@@ -19,6 +12,7 @@ namespace PocketComputerTutorial.Forms.Controls.Assemblies
 
         public event EventHandler Deleted;
         public event EventHandler Updated;
+        public event EventHandler Opened;
 
         public AssemblyView(Assembly assembly)
         {
@@ -53,7 +47,7 @@ namespace PocketComputerTutorial.Forms.Controls.Assemblies
             var result = await APIContext.Assemblies.Get(Assembly.Id);
             if (result.Success)
             {
-                // TODO: Open content with assembly components
+                Opened?.Invoke(this, e);
             }
         }
 
