@@ -6,7 +6,7 @@ using ComputerHardwareGuide.Models.ViewModels;
 
 namespace PocketComputerTutorial.Forms.Options
 {
-    public partial class RangeOption : UserControl
+    public partial class RangeOption : UserControl, IBaseOption
     {
         public RangeOption(Unit unit)
         {
