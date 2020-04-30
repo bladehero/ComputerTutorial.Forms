@@ -38,8 +38,8 @@ namespace PocketComputerTutorial.Forms.Options
             {
                 return new (string, object)[]
                 {
-                    ($"{Unit.Options.First().Key}", (double)MinNumeric.Value),
-                    ($"{Unit.Options.Last().Key}", (double)MaxNumeric.Value)
+                    ($"{Unit.Options.First().Key}", MinNumeric.Value.ToString("0.00", System.Globalization.CultureInfo.InvariantCulture)),
+                    ($"{Unit.Options.Last().Key}", MaxNumeric.Value.ToString("0.00", System.Globalization.CultureInfo.InvariantCulture))
                 };
             }
         }
