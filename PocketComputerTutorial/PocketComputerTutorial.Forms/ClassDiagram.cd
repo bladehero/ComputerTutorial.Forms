@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PocketComputerTutorial.Forms.Controls.Assemblies.AssemblyList">
+    <Position X="4" Y="6" Width="1.5" />
+    <InheritanceLine Type="System.Windows.Forms.UserControl" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="1.441" />
+        <Point X="8.25" Y="1.613" />
+        <Point X="5.261" Y="1.613" />
+        <Point X="5.261" Y="5.846" />
+        <Point X="4.625" Y="5.846" />
+        <Point X="4.625" Y="6" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>gAAAEBAAACAABBAAAACAAAACmAAAACAAAAAAAIABAAA=</HashCode>
+      <FileName>Controls\Assemblies\AssemblyList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PocketComputerTutorial.Forms.Controls.Assemblies.AssemblyView">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <InheritanceLine Type="System.Windows.Forms.UserControl" ManuallyRouted="true">
+      <Path>
+        <Point X="8.25" Y="1.441" />
+        <Point X="8.25" Y="1.613" />
+        <Point X="8.25" Y="1.613" />
+        <Point X="8.25" Y="1.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAgAAAABACQAAAAAAACCEAAGEAEAAIQAQAAAAABAgAA=</HashCode>
+      <FileName>Controls\Assemblies\AssemblyView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PocketComputerTutorial.Forms.Controls.AssemblyComponents.AssemblyComponentList">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <InheritanceLine Type="System.Windows.Forms.UserControl" ManuallyRouted="true">
+      <Path>
+        <Point X="8.25" Y="1.441" />
+        <Point X="8.25" Y="1.628" />
+        <Point X="1.25" Y="1.628" />
+        <Point X="1.25" Y="1.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>EBAAAEAAACRAFJCAAQCJjABCgIAACIACSYAAASAAIEg=</HashCode>
+      <FileName>Controls\AssemblyComponents\AssemblyComponentList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PocketComputerTutorial.Forms.Controls.Components.ComponentList">
+    <Position X="2.25" Y="6" Width="1.5" />
+    <InheritanceLine Type="System.Windows.Forms.UserControl" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="1.441" />
+        <Point X="8.25" Y="1.613" />
+        <Point X="2.75" Y="1.613" />
+        <Point X="2.75" Y="6" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACBAAACCAAAAAAAAAAAADAAAAA=</HashCode>
+      <FileName>Controls\Components\ComponentList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PocketComputerTutorial.Forms.Controls.Components.ComponentView">
+    <Position X="5.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAgAAAACAAABAAAACIEAAGAAGAAKAAAABAAIAAAAA=</HashCode>
+      <FileName>Controls\Components\ComponentView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PocketComputerTutorial.Forms.Controls.SearchComponents.SearchComponentList">
+    <Position X="3.25" Y="1.75" Width="1.5" />
+    <InheritanceLine Type="System.Windows.Forms.UserControl" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="1.441" />
+        <Point X="8.25" Y="1.613" />
+        <Point X="4" Y="1.613" />
+        <Point X="4" Y="1.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAECAAAIAAAACBAAACAAAAAIAAAAAAAAIgAAA=</HashCode>
+      <FileName>Controls\SearchComponents\SearchComponentList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PocketComputerTutorial.Forms.MainForm">
+    <Position X="16.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgCAAAAAAAADAAAACAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PocketComputerTutorial.Forms.Program">
+    <Position X="19.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PocketComputerTutorial.Forms.Modals.SearchComponentModal">
+    <Position X="18.25" Y="2" Width="2.25" />
+    <InheritanceLine Type="System.Windows.Forms.Form" FixedToPoint="true">
+      <Path>
+        <Point X="19.25" Y="1.191" />
+        <Point X="19.25" Y="2" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modals\SearchComponentModal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PocketComputerTutorial.Forms.Modals.UpdateAssemblyModal">
+    <Position X="20.75" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BBAAAAAAACAAADAAAACAAAgCAAAAAIAAAAAABAAAAAA=</HashCode>
+      <FileName>Modals\UpdateAssemblyModal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PocketComputerTutorial.Forms.Options.CheckboxOption" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="2" Width="1.5" />
+    <InheritanceLine Type="System.Windows.Forms.UserControl" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="1.441" />
+        <Point X="8.25" Y="1.613" />
+        <Point X="10.625" Y="1.613" />
+        <Point X="10.625" Y="2" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAIACAAIACAAAAJAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Options\CheckboxOption.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PocketComputerTutorial.Forms.Options.RadiobuttonOption" BaseTypeListCollapsed="true">
+    <Position X="11" Y="2" Width="1.5" />
+    <InheritanceLine Type="System.Windows.Forms.UserControl" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="1.441" />
+        <Point X="8.25" Y="1.613" />
+        <Point X="12.312" Y="1.613" />
+        <Point X="12.312" Y="2" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAIACAAIACAAAAJAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Options\RadiobuttonOption.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PocketComputerTutorial.Forms.Options.RangeOption" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="2" Width="1.5" />
+    <InheritanceLine Type="System.Windows.Forms.UserControl" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="1.441" />
+        <Point X="8.25" Y="1.613" />
+        <Point X="15.875" Y="1.613" />
+        <Point X="15.875" Y="2" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAIEAAAAACQAAAAAIACAAIACAAAABAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Options\RangeOption.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PocketComputerTutorial.Forms.Options.TextOption" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="2" Width="1.5" />
+    <InheritanceLine Type="System.Windows.Forms.UserControl" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="1.441" />
+        <Point X="8.25" Y="1.613" />
+        <Point X="14" Y="1.613" />
+        <Point X="14" Y="2" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAIAIACACIACAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Options\TextOption.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PocketComputerTutorial.Forms.Properties.Resources">
+    <Position X="17.25" Y="7" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PocketComputerTutorial.Forms.Properties.Settings">
+    <Position X="15.25" Y="7" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Windows.Forms.UserControl" Collapsed="true">
+    <Position X="7.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Forms.Form" Collapsed="true">
+    <Position X="18.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="PocketComputerTutorial.Forms.Options.IBaseOption">
+    <Position X="12.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Options\BaseOption.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
