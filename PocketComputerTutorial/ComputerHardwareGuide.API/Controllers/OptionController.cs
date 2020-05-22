@@ -7,12 +7,32 @@ using System.Threading.Tasks;
 
 namespace ComputerHardwareGuide.API.Controllers
 {
+    /// <summary>
+    /// Option controller for component search
+    /// </summary>
     public sealed class OptionController : BaseController
     {
+        /// <summary>
+        /// Method of getting lookups
+        /// </summary>
+        /// <param name="type">Component type</param>
+        /// <returns>Returns lookups for search</returns>
         public async Task<BaseApiResponse<IEnumerable<Lookup>>> GetLookups(ComponentTypeEnumeration type) 
             => await Get<IEnumerable<Lookup>>("lookup", type);
+
+        /// <summary>
+        /// Method of getting firms
+        /// </summary>
+        /// <param name="type">Component type</param>
+        /// <returns>Returns firms for search</returns>
         public async Task<BaseApiResponse<IEnumerable<Firm>>> GetFirms(ComponentTypeEnumeration type)
             => await Get<IEnumerable<Firm>>("firm", type);
+
+        /// <summary>
+        /// Method of getting units
+        /// </summary>
+        /// <param name="type">Component type</param>
+        /// <returns>Returns units for search</returns>
         public async Task<BaseApiResponse<GetUnitVM>> GetUnits(ComponentTypeEnumeration type)
             => await Get<GetUnitVM>("unit", type);
 
