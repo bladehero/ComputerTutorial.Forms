@@ -9,7 +9,7 @@ namespace ComputerHardwareGuide.API.Controllers
         public static HttpClientHandler HttpClientHandler { get; set; } = new HttpClientHandler();
         public string Endpoint { get; set; }
 
-        protected ApplicationHttpClient ApplicationHttpClient { get; } = new ApplicationHttpClient(HttpClientHandler);
+        protected static ApplicationHttpClient ApplicationHttpClient { get; } = new ApplicationHttpClient(HttpClientHandler);
 
         public BaseController(params string[] endpoints)
         {

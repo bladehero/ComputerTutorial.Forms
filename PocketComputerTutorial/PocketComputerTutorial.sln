@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComputerHardwareGuide.Model
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComputerHardwareGuide.API", "ComputerHardwareGuide.API\ComputerHardwareGuide.API.csproj", "{884C08D5-79CB-4AE3-A53C-BF98FAC5DBA9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputerHardwareGuide.Tests", "ComputerHardwareGuide.Tests\ComputerHardwareGuide.Tests.csproj", "{7AF3136F-0C95-4FDF-A542-9FDF512D8E8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{884C08D5-79CB-4AE3-A53C-BF98FAC5DBA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{884C08D5-79CB-4AE3-A53C-BF98FAC5DBA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{884C08D5-79CB-4AE3-A53C-BF98FAC5DBA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AF3136F-0C95-4FDF-A542-9FDF512D8E8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AF3136F-0C95-4FDF-A542-9FDF512D8E8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AF3136F-0C95-4FDF-A542-9FDF512D8E8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AF3136F-0C95-4FDF-A542-9FDF512D8E8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
