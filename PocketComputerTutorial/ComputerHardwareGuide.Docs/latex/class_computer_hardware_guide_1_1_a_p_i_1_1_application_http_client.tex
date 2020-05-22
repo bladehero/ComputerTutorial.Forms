@@ -1,0 +1,99 @@
+\hypertarget{class_computer_hardware_guide_1_1_a_p_i_1_1_application_http_client}{}\doxysection{Computer\+Hardware\+Guide.\+A\+P\+I.\+Application\+Http\+Client Class Reference}
+\label{class_computer_hardware_guide_1_1_a_p_i_1_1_application_http_client}\index{ComputerHardwareGuide.API.ApplicationHttpClient@{ComputerHardwareGuide.API.ApplicationHttpClient}}
+
+
+Custom application http client for sending requests  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+async Task$<$ \mbox{\hyperlink{class_computer_hardware_guide_1_1_a_p_i_1_1_base_api_response}{Base\+Api\+Response}}$<$ TF $>$ $>$ \mbox{\hyperlink{class_computer_hardware_guide_1_1_a_p_i_1_1_application_http_client_a9504db41948998c1ac255b894ae987b3}{Http\+Send\+Async$<$ T\+F $>$}} (string uri, string end\+Point=\char`\"{}\char`\"{}, object data=null, string media\+Type=\char`\"{}application/json\char`\"{}, Http\+Method method=null, I\+Dictionary$<$ string, string $>$ headers=null, I\+Enumerable$<$ Key\+Value\+Pair$<$ string, object $>$$>$ query\+Parameters=null, bool use\+Gzip=false)
+\begin{DoxyCompactList}\small\item\em Core method of sending, parsing and getting response using data \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Cookie\+Container \mbox{\hyperlink{class_computer_hardware_guide_1_1_a_p_i_1_1_application_http_client_ac473012e8fb7e2190203ebb2cba35b2b}{\+\_\+cookies}} = new Cookie\+Container()
+\item 
+readonly Dictionary$<$ string, string $>$ \mbox{\hyperlink{class_computer_hardware_guide_1_1_a_p_i_1_1_application_http_client_a4a61cd545312f1e4835439695678aff2}{\+\_\+headers}} = new Dictionary$<$string, string$>$()
+\begin{DoxyCompactList}\small\item\em Headers what are sent in request \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly Http\+Client \mbox{\hyperlink{class_computer_hardware_guide_1_1_a_p_i_1_1_application_http_client_aa00f526ce0724f000caa8e34803d7867}{\+\_\+http\+Client}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Custom application http client for sending requests 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_computer_hardware_guide_1_1_a_p_i_1_1_application_http_client_a9504db41948998c1ac255b894ae987b3}\label{class_computer_hardware_guide_1_1_a_p_i_1_1_application_http_client_a9504db41948998c1ac255b894ae987b3}} 
+\index{ComputerHardwareGuide.API.ApplicationHttpClient@{ComputerHardwareGuide.API.ApplicationHttpClient}!HttpSendAsync$<$ TF $>$@{HttpSendAsync$<$ TF $>$}}
+\index{HttpSendAsync$<$ TF $>$@{HttpSendAsync$<$ TF $>$}!ComputerHardwareGuide.API.ApplicationHttpClient@{ComputerHardwareGuide.API.ApplicationHttpClient}}
+\doxysubsubsection{\texorpdfstring{HttpSendAsync$<$ TF $>$()}{HttpSendAsync< TF >()}}
+{\footnotesize\ttfamily async Task$<$\mbox{\hyperlink{class_computer_hardware_guide_1_1_a_p_i_1_1_base_api_response}{Base\+Api\+Response}}$<$TF$>$ $>$ Computer\+Hardware\+Guide.\+A\+P\+I.\+Application\+Http\+Client.\+Http\+Send\+Async$<$ TF $>$ (\begin{DoxyParamCaption}\item[{string}]{uri,  }\item[{string}]{end\+Point = {\ttfamily \char`\"{}\char`\"{}},  }\item[{object}]{data = {\ttfamily null},  }\item[{string}]{media\+Type = {\ttfamily \char`\"{}application/json\char`\"{}},  }\item[{Http\+Method}]{method = {\ttfamily null},  }\item[{I\+Dictionary$<$ string, string $>$}]{headers = {\ttfamily null},  }\item[{I\+Enumerable$<$ Key\+Value\+Pair$<$ string, object $>$$>$}]{query\+Parameters = {\ttfamily null},  }\item[{bool}]{use\+Gzip = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Core method of sending, parsing and getting response using data 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TF} & Type of response\textquotesingle{}s result\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em uri} & Uri on which is sent request\\
+\hline
+{\em end\+Point} & Additional segment of Uri\\
+\hline
+{\em data} & Data is added to request body\\
+\hline
+{\em media\+Type} & Type of data added to request\\
+\hline
+{\em method} & H\+T\+TP method\\
+\hline
+{\em headers} & Headers to add into request\\
+\hline
+{\em query\+Parameters} & Query params\\
+\hline
+{\em use\+Gzip} & If gzip\textquotesingle{}s needed use true\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of request to the \mbox{\hyperlink{namespace_computer_hardware_guide_1_1_a_p_i}{A\+PI}} using custom type
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_computer_hardware_guide_1_1_a_p_i_1_1_application_http_client_ac473012e8fb7e2190203ebb2cba35b2b}\label{class_computer_hardware_guide_1_1_a_p_i_1_1_application_http_client_ac473012e8fb7e2190203ebb2cba35b2b}} 
+\index{ComputerHardwareGuide.API.ApplicationHttpClient@{ComputerHardwareGuide.API.ApplicationHttpClient}!\_cookies@{\_cookies}}
+\index{\_cookies@{\_cookies}!ComputerHardwareGuide.API.ApplicationHttpClient@{ComputerHardwareGuide.API.ApplicationHttpClient}}
+\doxysubsubsection{\texorpdfstring{\_cookies}{\_cookies}}
+{\footnotesize\ttfamily Cookie\+Container Computer\+Hardware\+Guide.\+A\+P\+I.\+Application\+Http\+Client.\+\_\+cookies = new Cookie\+Container()}
+
+\mbox{\Hypertarget{class_computer_hardware_guide_1_1_a_p_i_1_1_application_http_client_a4a61cd545312f1e4835439695678aff2}\label{class_computer_hardware_guide_1_1_a_p_i_1_1_application_http_client_a4a61cd545312f1e4835439695678aff2}} 
+\index{ComputerHardwareGuide.API.ApplicationHttpClient@{ComputerHardwareGuide.API.ApplicationHttpClient}!\_headers@{\_headers}}
+\index{\_headers@{\_headers}!ComputerHardwareGuide.API.ApplicationHttpClient@{ComputerHardwareGuide.API.ApplicationHttpClient}}
+\doxysubsubsection{\texorpdfstring{\_headers}{\_headers}}
+{\footnotesize\ttfamily readonly Dictionary$<$string, string$>$ Computer\+Hardware\+Guide.\+A\+P\+I.\+Application\+Http\+Client.\+\_\+headers = new Dictionary$<$string, string$>$()}
+
+
+
+Headers what are sent in request 
+
+\mbox{\Hypertarget{class_computer_hardware_guide_1_1_a_p_i_1_1_application_http_client_aa00f526ce0724f000caa8e34803d7867}\label{class_computer_hardware_guide_1_1_a_p_i_1_1_application_http_client_aa00f526ce0724f000caa8e34803d7867}} 
+\index{ComputerHardwareGuide.API.ApplicationHttpClient@{ComputerHardwareGuide.API.ApplicationHttpClient}!\_httpClient@{\_httpClient}}
+\index{\_httpClient@{\_httpClient}!ComputerHardwareGuide.API.ApplicationHttpClient@{ComputerHardwareGuide.API.ApplicationHttpClient}}
+\doxysubsubsection{\texorpdfstring{\_httpClient}{\_httpClient}}
+{\footnotesize\ttfamily readonly Http\+Client Computer\+Hardware\+Guide.\+A\+P\+I.\+Application\+Http\+Client.\+\_\+http\+Client\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Projects/\+Pocket\+Computer\+Tutorial.\+Forms/\+Pocket\+Computer\+Tutorial/\+Computer\+Hardware\+Guide.\+A\+P\+I/\mbox{\hyperlink{_application_http_client_8cs}{Application\+Http\+Client.\+cs}}\end{DoxyCompactItemize}
