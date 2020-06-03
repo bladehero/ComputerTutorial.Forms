@@ -11,7 +11,7 @@ namespace ComputerHardwareGuide.API.Controllers
         /// <summary>
         /// API Url
         /// </summary>
-        public static string BaseUrl { get; set; } = "https://localhost:44312/";
+        public static string BaseUrl { get; set; }
 
         /// <summary>
         /// HTTP handler

@@ -16,8 +16,9 @@ namespace ComputerHardwareGuide.Tests.API
             ComputerHardwareGuide.API.APIContext.SetApiUrl(appUrl);
         }
 
+        #region Test Data
         private Assembly GetAssembly() => new AssemblyController().Get().Result.Data?.FirstOrDefault();
-        private AssemblyComponent GetAssemblyComponent() => 
+        private AssemblyComponent GetAssemblyComponent() =>
             new AssemblyController().Get(GetAssembly().Id).Result.Data?.Assembly?.AssemblyComponents?.FirstOrDefault();
         private AddAssemblyComponentVM MapAddAssemblyComponentVM(AssemblyComponent component) =>
             new AddAssemblyComponentVM
@@ -39,8 +40,9 @@ namespace ComputerHardwareGuide.Tests.API
                 AssemblyComponentId = component.Id,
                 Quantity = component.Quantity
             };
+        #endregion
 
-
+        #region Test Methods
         [Fact]
         public async Task GetAssembliesNormalTest()
         {
@@ -132,5 +134,6 @@ namespace ComputerHardwareGuide.Tests.API
             Assert.True(result.Success);
             Assert.NotNull(result.Data);
         }
+        #endregion
     }
 }
